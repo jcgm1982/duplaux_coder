@@ -59,7 +59,6 @@ p {
 /* Small version of the Imagotyope for Header */
 .logoSm {
     height: 40px;
-    margin-top: 12px;
 }
 
 header {
@@ -210,6 +209,185 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     color: #0e7373;
     background-color: #002626;
     transition: all .1s ease-in-out;
+}
+
+/*?------------------------------------------- Header end + Hero Start ------------*/
+
+/*--------------- Hero Background -------------*/
+
+#hero {
+    background-image: url(../img/marketing-agency.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -999;
+}
+
+/*------------- Hero text container -----------*/
+
+.heroText {
+    text-align: center;
+    padding: 120px 20% 0px 20%;
+    align-content: center;
+    color: white;
+}
+
+.heroContent {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.heroText h4 {
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+}
+
+/*---------------- Hero buttons ---------------*/
+
+.heroCta ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.heroCta ul li {
+    padding: 20px;
+}
+
+.heroBtnSolid {
+    font-family: poppins;
+    font-size: 16px;
+    color: white;
+    background-color: #0cbaba;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.heroBtnGhost {
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    font-size: 16px;
+    background-color: #0cbaba00;
+    border-style: solid;
+    border-color: #a8a8a8;
+    border-width: 2px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/*------------------ Hero Vector -----------------*/
+
+.heroVector {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroVector img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+/*--------------- Hero Media Queries ---------------------*/
+
+@media (max-width: 540px) {
+    .heroText {
+        text-align: center;
+        padding: 120px 8px 0px 8px;
+    }
+    .heroText h4 {
+        margin-top: 16px 8px;
+    }
+
+    .heroCta ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+    }
+    .heroVector img {
+        width: 92%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*?-------------- End HERO + Start Services section -----------------*/
+
+.services {
+    background-color: #1a191d;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.cardBlock-bg {
+    background-color: #1a191d;
+}
+
+.serviceInfo {
+    margin: 0px 20% 0px 20%;
+    text-align: center;
+}
+
+.serviceInfo p {
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+/*-------------------- Cards -----------------------*/
+
+.cardBlock {
+    margin: 0px 10%;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 16px;
+    padding: 24px 24px 40px 24px;
+    background-color: #272727;
+    border-radius: 16px;
+    width: 380px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 25px rgba(2, 2, 2, 0.2);
+    ;
+}
+
+.card a img {
+    width: 50%;
+    margin: 20px 0px 0px 0px;
+}
+
+.card p {
+    color: white;
+    margin: 16px 0px 32px 0px;
+}
+
+.card h3 {
+    color: white;
+    margin: 16px 0px 32px 0px;
+}
+
+.cardBtn {
+    font-family: poppins;
+    font-size: 16px;
+    color: white;
+    background-color: #0cbaba;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 
