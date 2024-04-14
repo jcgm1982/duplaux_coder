@@ -248,7 +248,8 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 0px;
+    padding-left: 0px;
 }
 
 .heroCta ul li {
@@ -299,8 +300,18 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
         text-align: center;
         padding: 120px 8px 0px 8px;
     }
+
+    .heroText h1 {
+        font-size: 32px;
+    }
+
+    .heroText h2 {
+        font-size: 20px;
+    }
+
     .heroText h4 {
         margin-top: 16px 8px;
+        font-size: 16px;
     }
 
     .heroCta ul {
@@ -324,9 +335,10 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
 .services {
     background-color: #1a191d;
     color: white;
-    height: 400px;
+    height: auto;
     display: flex;
     align-items: center;
+    padding: 80px 0px;
 }
 
 .cardBlock-bg {
@@ -334,19 +346,20 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
 }
 
 .serviceInfo {
-    margin: 0px 20% 0px 20%;
+    margin: 0px 10% 0px 10%;
     text-align: center;
 }
 
 .serviceInfo p {
     margin-top: 24px;
     font-size: 24px;
+    color: white;
 }
 
 /*-------------------- Cards -----------------------*/
 
 .cardBlock {
-    margin: 0px 10%;
+    margin: 0px 0%;
     padding: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -390,6 +403,36 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     text-decoration: none;
 }
 
+/**--------------------------------------------- CTA Banner Start */
+
+.ctaBanner {
+    background-color: #0cbaba;
+}
+
+.ctaBanner h2, p {
+    color: #002626;
+}
+
+/**----------------------------------------------- Gallery Start */
+
+.galleryBg {
+    background-color: #002626;
+    padding: 20px 0px;
+}
+
+
+/**------------------------------------------------ Contact test */
+
+.contactBg {
+    background-color: #1a191d;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.contactSocial img{
+    height: 60px;
+    width: 60px;
+}
 
 /**---------------------------------------------------- Footer -------------------------------------------------------------*/
 /*?------------------------------------------------- Footer Start ----------------------------------------------------------*/
@@ -505,6 +548,7 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     justify-content: space-between;
     margin: 40px;
     list-style: none;
+    padding: 0px;
 }
 
 .navFooter ul li {
@@ -529,14 +573,15 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     grid-area: alternavFooter;
     display: flex;
     align-items: center;
-    justify-content: flex-end;  
+    justify-content: flex-end;
 }
 
 .alternavFooter ul {
     display: flex;
     justify-content: flex-end;
     margin-right: 80px;
-    list-style: none;
+    list-style: none;    
+    padding: 0px; 
 }
 
 .alternavFooter ul li {
@@ -590,7 +635,8 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     display: flex;
     align-items: center;
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 20px;    
+    color: white;
 }
 
 .contactFooter p img{
@@ -612,6 +658,10 @@ input:checked ~ nav .navToggler .menuBar:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copyright p {
+    color: white;
 }
 
 .copyright p a {
